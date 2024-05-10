@@ -1,0 +1,33 @@
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+:root {
+	--main-font-family: "Montserrat", sans-serif;
+	--second-family: "Nothing You Could Do", sans-serif;
+	--main-font-size: 26px;
+	--main-color: #fff;
+}
+
+body {
+	min-width: 320px;
+	font-family: var(--main-font-family);
+	font-size: var(--main-font-size);
+	font-weight: 400;
+	color: var(--main-color);
+	background-color: #3d2e26;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1790px;
+}

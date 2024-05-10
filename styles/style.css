@@ -1,0 +1,314 @@
+.header {
+  margin: 60px 0 106px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--second-family);
+  font-size: 50px;
+}
+
+.list {
+  display: flex;
+  gap: 48px;
+}
+
+.list .item:hover {
+  transition: 0.3s;
+  color: rgba(218, 178, 152, 0.7);
+}
+
+.moment {
+  margin-bottom: 145px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-end;
+  gap: 0 72px;
+}
+
+.col:first-of-type {
+  flex: 0 1 35.057%;
+}
+
+.col:last-of-type {
+  flex: 1 0 auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 145px;
+  line-height: 0.9;
+  color: #ab8b75;
+  margin-bottom: 23px;
+}
+
+.desc {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 45px;
+  padding-bottom: 31px;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 31px;
+  color: #3d2e26;
+  background: #dfe4e7;
+  border-radius: 45px;
+  padding: 16px 39px;
+}
+
+.button:hover {
+  transition: 0.3s;
+  background-color: rgba(218, 178, 152, 0.7);
+}
+
+.img-wrapper {
+  position: relative;
+  padding-bottom: 105.509%;
+}
+
+.img-wrapper img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  margin-bottom: 111.5px;
+}
+
+.about {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 19px;
+}
+
+.box {
+  flex: 33.333%;
+  padding: 40px 35px 74px;
+  border: 4px solid #fff;
+  border-radius: 30px;
+  background: rgba(218, 178, 152, 0.7);
+}
+
+.svg-wrap {
+  width: 85px;
+  height: 85px;
+  border-radius: 15px;
+  padding: 18px;
+  background: #3a3c2e;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+.svg-wrap svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: white;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.subsubtitle {
+  font-weight: 700;
+  font-size: 35px;
+  color: #3d2e26;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin: 0 auto;
+  font-size: 30px;
+  color: #000;
+}
+
+.box:first-of-type .text {
+  max-width: 312px;
+}
+
+.box:last-of-type .text {
+  max-width: 380px;
+}
+
+.footer {
+  padding: 56px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 40px;
+}
+
+.footer-list {
+  display: flex;
+  gap: 0 21px;
+}
+
+.footer-item {
+  width: 38px;
+  height: 38px;
+}
+
+.footer-item:hover svg {
+  transition: 0.3s;
+  fill: #ab8b75;
+}
+
+.footer-item svg {
+  width: 100%;
+  height: 100%;
+  fill: #fffbfb;
+}
+
+@media (max-width: 1225px) {
+  .header {
+    margin: 60px 0 70px;
+  }
+  .list {
+    gap: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: initial;
+    gap: 30px 0;
+  }
+
+  .col:first-of-type {
+    text-align: center;
+  }
+
+  .img-wrapper {
+    overflow: hidden;
+    border-radius: 50px;
+    padding-bottom: 80%;
+  }
+
+  .title {
+    font-size: 110px;
+  }
+
+  .moment {
+    margin-bottom: 80px;
+  }
+
+  .wrap {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .wrap .box .text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 986px) {
+  .header-wrapper {
+    justify-content: center;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin: 40px 0;
+  }
+  .header-wrapper {
+    justify-content: center;
+  }
+  .nav {
+    display: none;
+  }
+  .main {
+    margin-bottom: 50px;
+  }
+  .box {
+    flex: 100%;
+  }
+  .title {
+    font-size: 80px;
+  }
+  .subsubtitle {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .moment {
+    margin-bottom: 60px;
+  }
+  .title {
+    font-size: 54px;
+  }
+  .desc {
+    font-size: 30px;
+  }
+  .box {
+    padding: 40px 30px 50px;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 38px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .desc {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 32px;
+  }
+
+  .button {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+  .box {
+    padding: 40px 30px 50px;
+  }
+}
